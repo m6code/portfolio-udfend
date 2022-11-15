@@ -11,3 +11,6 @@
 ## TODOs
 - Use Grid as top level layout
 - Use flexbox to arrange other elements within the Grid
+
+## Resources
+- Get Images from [Unsplash.com](https://unsplash.com)

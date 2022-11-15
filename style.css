@@ -1,0 +1,56 @@
+/* Set THE COLOR THEME FOR PROJECT */
+:root {
+    --cl-teal-blue: hsl(193, 100%, 45%);
+    --cl-blue-grey: hsl(206, 25%, 58%);
+    --cl-dark-night: hsl(207, 25%, 23%);
+}
+
+.color-primary {
+    color: var(--cl-teal-blue);
+}
+.color-blue-grey {
+    color: var(--cl-blue-grey);
+}
+.color-dark-night {
+    color: var(--cl-dark-night);
+}
+
+/* Apply CSS RESET */
+
+/* Apply RESPONSIVE DESIGN STYLING */
+/* Make Media content Responsive */
+img, embed,
+object, video, picture {
+    max-width: 100%
+}
+/* Make buttons, nav and links accessible on smaller screens */
+button, a, nav {
+    min-width: 48px;
+    min-height: 48px;/* Set THE COLOR THEME FOR PROJECT */
+}
+
+
+/* Laying THINGS OUT */
+.main-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+        "featured-content"
+        "main-content"
+        "nav-content";
+}
+.work-section, .nav-content {
+    display: flex;
+}
+
+.content:nth-child(1) {
+    grid-area: nav-content;
+}
+
+.content:nth-child(2) {
+    grid-area: main-content;
+}
+.content:nth-child(3) {
+    grid-area: featured-content;
+}
