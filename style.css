@@ -36,16 +36,18 @@ button, a, nav {
     gap: 1.5rem;
     grid-auto-columns: 1fr;
     grid-template-areas:
-        "featured-content"
+        "nav-content"
         "main-content"
-        "nav-content";
+        "featured-content";
 }
 .work-section, .nav-content {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .content:nth-child(1) {
     grid-area: nav-content;
+    justify-content: space-between;
 }
 
 .content:nth-child(2) {
@@ -53,4 +55,17 @@ button, a, nav {
 }
 .content:nth-child(3) {
     grid-area: featured-content;
+    justify-content: space-evenly;
+}
+
+.logo-img {
+    width: 102px;
+    height: 102px;
+    border-radius: 3rem;
+}
+
+@media screen and (min-width: 351px) {
+    .sub-title {
+        text-align: end;
+    }
 }
