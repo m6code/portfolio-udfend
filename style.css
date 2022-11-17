@@ -29,7 +29,6 @@ button, a, nav {
     min-height: 48px;/* Set THE COLOR THEME FOR PROJECT */
 }
 
-
 /* Laying THINGS OUT */
 .main-grid {
     display: grid;
@@ -67,5 +66,23 @@ button, a, nav {
 @media screen and (min-width: 351px) {
     .sub-title {
         text-align: end;
+    }
+}
+
+.featured {
+    width: 100%;
+}
+
+.featured-work-1, .featured-work-2, .featured-work-3 {
+    width: 100%;
+}
+
+.port-img {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .featured-work-1, .featured-work-2, .featured-work-3 {
+        width: 33%;
     }
 }
